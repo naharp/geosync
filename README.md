@@ -23,6 +23,6 @@ Usage: geosync [OPTIONS] csv_file
 
 Any system with Golang 1.13+ can build this package 
 ```
-go 
+$ go get github.com/naharp/geosync
 ```
 
