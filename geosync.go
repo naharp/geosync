@@ -80,11 +80,11 @@ func loadCfg() {
 		loadJson(cfgFile, &config, true)
 		fmt.Println("Using OSM Username: ", config.OSM_User)
 	} else if !quiet {
-		fmt.Print("OSM Username :")
+		fmt.Print("OSM Username : ")
 		fmt.Scanln(&config.OSM_User)
-		fmt.Print("OSM Password :")
+		fmt.Print("OSM Password : ")
 		fmt.Scanln(&config.OSM_Pass)
-		fmt.Print("OSM API Url (default: https://api.openstreetmap.org/")
+		fmt.Print("OSM API Url (press enter for default OSM API) : ")
 		fmt.Scanln(&config.OSM_Host)
 		if config.OSM_Host == ""{
 			config.OSM_Host = "https://api.openstreetmap.org/"

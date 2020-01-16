@@ -5,6 +5,8 @@ GeoSync is a small commandline application to keep coordinates of places provide
 
 It uploads a place to OSM and saves returned IDs to a local journal file for tracking modifications. A synced entry can be deleted by setting the `latlng` field empty. 
 
+Download: [Windows Build](https://github.com/naharp/geosync/releases/download/v0.0.1/geosync-windows.zip) &bull;
+[Linux Build (64bit)](https://github.com/naharp/geosync/releases/download/v0.0.1/geosync-linux-amd64.zip)
 ## Usage ##
 ```bash
 $ geosync -h
@@ -17,4 +19,10 @@ Usage: geosync [OPTIONS] csv_file
   
 ```  
 
+## Building ##
+
+Any system with Golang 1.13+ can build this package 
+```
+go 
+```
 
